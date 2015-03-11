@@ -1,10 +1,18 @@
 package base;
+import java.awt.*;
+import javax.swing.JFrame;
 
 public class Main {
 
 	public static void main(String[] args) {
-		//prova
-
+			EventQueue.invokeLater(new Runnable() {	
+			public void run() {
+				JFrame gioco = new GiocoScacchi();
+				gioco.setSize(800, 650);
+				gioco.setVisible(true);
+				gioco.setTitle("Scacchi");
+				gioco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);			
+			}
+		});
 	}
-
-}
+} 
