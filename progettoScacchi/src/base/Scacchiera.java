@@ -3,19 +3,27 @@ package base;
 import java.awt.*;
 
 import javax.swing.*;
-public class Scacchiera extends JPanel {
+public class Scacchiera extends JComponent {
 	private static final long serialVersionUID = 2375810646479149663L;
-	JButton BScacchiera = new JButton(new ImageIcon("/home/simo/git/ProgettoSc/progettoScacchi/immagini"));
-	JPanel Gioco = new JPanel();
+	private final Image scacchiera;
+	
 	public Scacchiera() {
-		BScacchiera.setContentAreaFilled(false);
-		BScacchiera.setBorderPainted(false);
-		BScacchiera.setPreferredSize(new Dimension(600,600));
-		Gioco.add(BScacchiera);
-		add(Gioco);
-
-		
+		scacchiera=new ImageIcon("../progettoScacchi/immagini/scacchiera.png").getImage();
 	}
+	
+	public Dimension getPreferredSize(){
+		return new Dimension(600, 600);
+	}
+	
+	@Override
+	protected void paintComponent(Graphics g) {
+		if(scacchiera==null)
+			return;
+		
+		g.drawImage(scacchiera, 0, 0, null);
+	}
+	
+	
 }
 
  

@@ -8,7 +8,7 @@ public class Main {
 			EventQueue.invokeLater(new Runnable() {	
 			public void run() {
 				JFrame gioco = new GiocoScacchi();
-				gioco.setSize(800, 650);
+				gioco.setSize(1000, 650);
 				gioco.setVisible(true);
 				gioco.setTitle("Scacchi");
 				gioco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);			
