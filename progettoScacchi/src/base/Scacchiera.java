@@ -8,7 +8,7 @@ public class Scacchiera extends JComponent {
 	private final Image scacchiera;
 	
 	public Scacchiera() {
-		scacchiera=new ImageIcon("../progettoScacchi/immagini/scacchiera.png").getImage();
+//		scacchiera=new ImageIcon("../progettoScacchi/immagini/scacchiera.png").getImage();
 	}
 	
 	public Dimension getPreferredSize(){
