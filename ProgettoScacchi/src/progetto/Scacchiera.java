@@ -77,4 +77,4 @@ public class Scacchiera extends JComponent {
 	}
 	
 	
-}
+}//

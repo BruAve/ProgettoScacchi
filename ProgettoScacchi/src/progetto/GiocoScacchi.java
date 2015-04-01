@@ -17,3 +17,4 @@ public class GiocoScacchi extends JFrame {
 }
 
 
+//

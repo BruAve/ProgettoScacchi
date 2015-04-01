@@ -13,4 +13,4 @@ public class Giocatore2 extends JPanel {
 	
 	
 
-}
+}//
