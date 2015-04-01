@@ -11,4 +11,4 @@ public class Giocatore1 extends JPanel{
 		this.add(new JLabel("Giocatore 1:"));
 	}
 
-}//
+}
